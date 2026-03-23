@@ -5,10 +5,13 @@ const app = express();
 app.use(cors({
     origin: [
         'https://simulador-frutas.netlify.app',
-        'http://localhost:3000'
+        'https://www.simulador-frutas.netlify.app',
+        'http://localhost:3000',
+        'http://127.0.0.1:5500'
     ]
 }));
 app.use(express.json());
+app.get('/ping', (req, res) => res.json({ ok: true }));
 
 // ==========================================================
 // 🧠 MOTOR MATEMÁTICO (Aislado y protegido en el servidor)
