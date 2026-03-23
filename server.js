@@ -8,6 +8,8 @@ app.use(cors({
     origin: [
         'https://simulador-frutas.netlify.app',
         'https://www.simulador-frutas.netlify.app',
+        'https://simulador-supermercado.netlify.app',
+        'https://www.simulador-supermercado.netlify.app',
         'http://localhost:3000',
         'http://127.0.0.1:5500'
     ]
