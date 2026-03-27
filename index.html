@@ -3595,9 +3595,12 @@
                 a = 0; s = 0; e = cm;
             } else if (t === 'Nebulizador_Dinamico') {
                 let cm = 0;
-                el.querySelectorAll('.mant-row').forEach(r => {
-                    cm += (parseSafeFloat(r.querySelector('.m-mant-o').value) * parseSafeFloat(r.querySelector('.m-mant-h').value) * parseSafeFloat(r.querySelector('.m-mant-p').value));
-                });
+                let nebuWrapper = el.querySelector('.m-nebu-wrapper');
+                if (nebuWrapper) {
+                    nebuWrapper.querySelectorAll('.mant-row').forEach(r => {
+                        cm += (parseSafeFloat(r.querySelector('.m-mant-o').value) * parseSafeFloat(r.querySelector('.m-mant-h').value) * parseSafeFloat(r.querySelector('.m-mant-p').value));
+                    });
+                }
 
                 let cons = calc_cons(
                     parseSafeFloat(el.querySelector('.m-p').value),
