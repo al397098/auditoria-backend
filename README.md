@@ -8,7 +8,7 @@ Este proyecto es una herramienta web interactiva diseñada para auditar y simula
 * **Backend:** Node.js, Express (Alojado en Render)
 * **Base de Datos y Autenticación:** Firebase (Firestore & Auth)
 * **Despliegue:** GitHub Pages
-* 
+  
 ## Funcionalidades Principales
 * Autenticación segura mediante Google OAuth.
 * Cálculos de sostenibilidad en tiempo real.
